@@ -1,5 +1,5 @@
 import React from 'react'
-import CartIcon from '../Cart/CardIcon'
+import CartIcon from '../Cart/CartIcon'
 import styles from './HeaderCardButton.module.css';
 
 const HeaderCardButton = () => {
