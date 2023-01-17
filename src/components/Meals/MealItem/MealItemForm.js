@@ -1,5 +1,6 @@
 
-import { useRef, useState } from 'react';import Input from '../../UI/Input';
+import { useRef, useState } from 'react';
+import Input from '../../UI/Input';
 import styles from './MealItemForm.module.css';
 
 const MealItemForm = (props) => {
@@ -8,6 +9,7 @@ const MealItemForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
+    console.log('submitHandler called')
 
     const enteredAmount = amountInputRef.current.value;
     const enteredAmountNumber = +enteredAmount;
@@ -20,12 +22,12 @@ const MealItemForm = (props) => {
       setAmountIsValid(false);
       return;
     }
-
     props.onAddToCart(enteredAmountNumber);
   };
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={submitHandler}>
       <Input
+      ref = {amountInputRef}
         label='Amount'
         input={{
           id: 'amount_' + props.id,
@@ -37,6 +39,7 @@ const MealItemForm = (props) => {
         }}
       />
       <button>+ Add</button>
+      {!amountIsValid && <p>Please Enter A Valid Amount b/w .</p>}
     </form>
   );
 };
