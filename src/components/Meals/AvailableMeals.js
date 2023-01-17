@@ -5,25 +5,25 @@ import MealItem from '../Meals/MealItem/MealItem'
 const DUMMY_MEALS = [
     {
         id: 'm1',
-        name: 'Fry Fish',
+        name: 'Dhondha ki Fry Fish',
         description: 'Indian fish and veggies',
         price: 22.99,
     },
     {
         id: 'm2',
-        name: 'Biryani',
+        name: 'Mangru ki Biryani',
         description: 'A Haidrabadi specialty!',
         price: 16.5000,
     },
     {
         id: 'm3',
-        name: 'Chicken Burger',
+        name: 'Niranjan ki Chicken Burger',
         description: 'Indian, raw, meaty',
         price: 12.99,
     },
     {
         id: 'm4',
-        name: 'Sarso di Saag',
+        name: 'Deepak ki Sarso di Saag',
         description: 'Healthy...and green...',
         price: 18.99,
     },

@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <>
      <header className={styles.header}>
-        <h1>React Meals</h1>
+        <h1>Ratan Meals</h1>
         <HeaderCardButton onPressButton={props.onShowCart}/>
         </header> 
         <div className={styles['main_image']}>
